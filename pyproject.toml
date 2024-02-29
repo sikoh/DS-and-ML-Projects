@@ -1,16 +1,14 @@
 [project]
-name = "DS-and-ML-Projects"
+name = "Student-Performance-Prediction"
 version = "0.1.0"
 description = "Default template for PDM package"
 authors = [
     {name = "Silvana K", email = "silvanakoharian@gmail.com"},
 ]
 dependencies = [
-    "torch>=2.2.1",
-    "pandas>=2.2.1",
-    "numpy>=1.26.4",
-    "setuptools>=69.1.1",
-    "seaborn>=0.13.2",
+    "pandas",
+    "numpy",
+    "seaborn",
 ]
 requires-python = "==3.12.*"
 readme = "README.md"
@@ -19,3 +17,6 @@ license = {text = "MIT"}
 
 [tool.pdm]
 distribution = false
+
+[tool.pdm.dev-dependencies]
+dev = ["-e file:///${PROJECT_ROOT}/#egg=mlproject"]
