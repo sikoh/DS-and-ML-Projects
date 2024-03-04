@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.1"
-content_hash = "sha256:7d5cb2b61f3f5a25128c418bb440af21eb2a6ff0f60a2efaf8c95b2c017cf24a"
+content_hash = "sha256:5daf5cda76a33d9a1067482f0326a50ede9ae1629f2587f9297c5b30e4617d3f"
 
 [[package]]
 name = "appnope"
@@ -30,6 +30,28 @@ dependencies = [
 files = [
     {file = "asttokens-2.4.1-py2.py3-none-any.whl", hash = "sha256:051ed49c3dcae8913ea7cd08e46a606dba30b79993209636c4875bc1d637bc24"},
     {file = "asttokens-2.4.1.tar.gz", hash = "sha256:b03869718ba9a6eb027e134bfdf69f38a236d681c83c160d510768af11254ba0"},
+]
+
+[[package]]
+name = "catboost"
+version = "1.2.3"
+summary = "CatBoost Python Package"
+groups = ["default"]
+dependencies = [
+    "graphviz",
+    "matplotlib",
+    "numpy>=1.16.0",
+    "pandas>=0.24",
+    "plotly",
+    "scipy",
+    "six",
+]
+files = [
+    {file = "catboost-1.2.3-cp312-cp312-macosx_11_0_universal2.whl", hash = "sha256:7ea701141d12bb2e9ec348b4bb02be6b3188b6cd8832ae7b56a9bf98677a9128"},
+    {file = "catboost-1.2.3-cp312-cp312-manylinux2014_aarch64.whl", hash = "sha256:ec28140b7ad8663a68c05968c729263a7e8e604858a61fb6d9a190a9db025b26"},
+    {file = "catboost-1.2.3-cp312-cp312-manylinux2014_x86_64.whl", hash = "sha256:c73a85711260c48c881eff41f6183426eeee7f2e07118688ecafc8c32ab57eb3"},
+    {file = "catboost-1.2.3-cp312-cp312-win_amd64.whl", hash = "sha256:031c4a4e7160b6a965414dd60c9459fb8472c69a8156e80e16734dd0b068986e"},
+    {file = "catboost-1.2.3.tar.gz", hash = "sha256:72e141e3594975a7c08c787989b9b35d45b2beec13e37a62706a01b1037a1e44"},
 ]
 
 [[package]]
@@ -173,6 +195,17 @@ files = [
     {file = "fonttools-4.49.0-cp312-cp312-win_amd64.whl", hash = "sha256:a974c49a981e187381b9cc2c07c6b902d0079b88ff01aed34695ec5360767034"},
     {file = "fonttools-4.49.0-py3-none-any.whl", hash = "sha256:af281525e5dd7fa0b39fb1667b8d5ca0e2a9079967e14c4bfe90fd1cd13e0f18"},
     {file = "fonttools-4.49.0.tar.gz", hash = "sha256:ebf46e7f01b7af7861310417d7c49591a85d99146fc23a5ba82fdb28af156321"},
+]
+
+[[package]]
+name = "graphviz"
+version = "0.20.1"
+requires_python = ">=3.7"
+summary = "Simple Python interface for Graphviz"
+groups = ["default"]
+files = [
+    {file = "graphviz-0.20.1-py3-none-any.whl", hash = "sha256:587c58a223b51611c0cf461132da386edd896a029524ca61a1462b880bf97977"},
+    {file = "graphviz-0.20.1.zip", hash = "sha256:8c58f14adaa3b947daf26c19bc1e98c4e0702cdc31cf99153e6f06904d492bf8"},
 ]
 
 [[package]]
@@ -503,6 +536,21 @@ files = [
 ]
 
 [[package]]
+name = "plotly"
+version = "5.19.0"
+requires_python = ">=3.8"
+summary = "An open-source, interactive data visualization library for Python"
+groups = ["default"]
+dependencies = [
+    "packaging",
+    "tenacity>=6.2.0",
+]
+files = [
+    {file = "plotly-5.19.0-py3-none-any.whl", hash = "sha256:906abcc5f15945765328c5d47edaa884bc99f5985fbc61e8cd4dc361f4ff8f5a"},
+    {file = "plotly-5.19.0.tar.gz", hash = "sha256:5ea91a56571292ade3e3bc9bf712eba0b95a1fb0a941375d978cc79432e055f4"},
+]
+
+[[package]]
 name = "prompt-toolkit"
 version = "3.0.43"
 requires_python = ">=3.7.0"
@@ -751,6 +799,17 @@ files = [
 ]
 
 [[package]]
+name = "tenacity"
+version = "8.2.3"
+requires_python = ">=3.7"
+summary = "Retry code until it succeeds"
+groups = ["default"]
+files = [
+    {file = "tenacity-8.2.3-py3-none-any.whl", hash = "sha256:ce510e327a630c9e1beaf17d42e6ffacc88185044ad85cf74c0a8887c6a0f88c"},
+    {file = "tenacity-8.2.3.tar.gz", hash = "sha256:5398ef0d78e63f40007c1fb4c0bff96e1911394d2fa8d194f77619c05ff6cc8a"},
+]
+
+[[package]]
 name = "threadpoolctl"
 version = "3.3.0"
 requires_python = ">=3.8"
@@ -811,4 +870,23 @@ groups = ["default"]
 files = [
     {file = "wcwidth-0.2.13-py2.py3-none-any.whl", hash = "sha256:3da69048e4540d84af32131829ff948f1e022c1c6bdb8d6102117aac784f6859"},
     {file = "wcwidth-0.2.13.tar.gz", hash = "sha256:72ea0c06399eb286d978fdedb6923a9eb47e1c486ce63e9b4e64fc18303972b5"},
+]
+
+[[package]]
+name = "xgboost"
+version = "2.0.3"
+requires_python = ">=3.8"
+summary = "XGBoost Python Package"
+groups = ["default"]
+dependencies = [
+    "numpy",
+    "scipy",
+]
+files = [
+    {file = "xgboost-2.0.3-py3-none-macosx_10_15_x86_64.macosx_11_0_x86_64.macosx_12_0_x86_64.whl", hash = "sha256:b21b2bb188b162c615fce468db93e3f995f3690e6184aadc7743b58466dc7f13"},
+    {file = "xgboost-2.0.3-py3-none-macosx_12_0_arm64.whl", hash = "sha256:722d5b9351dfdf61973490dfd28abd42844db1cc469d07ed9b0cde9d1ffcdb32"},
+    {file = "xgboost-2.0.3-py3-none-manylinux2014_aarch64.whl", hash = "sha256:2315a57b1883221e2f78dd514559aa9797e6c272d995d22e45495a04adac93cc"},
+    {file = "xgboost-2.0.3-py3-none-manylinux2014_x86_64.whl", hash = "sha256:30bd5f789fad467fd49e04e5d19e04238b931682c3951a514da5c2410b3bf59c"},
+    {file = "xgboost-2.0.3-py3-none-win_amd64.whl", hash = "sha256:462f131d7bfb1bc42f67c57fa5aa3e57d2b5755b1573a6e0d2c7e8895164e0fc"},
+    {file = "xgboost-2.0.3.tar.gz", hash = "sha256:505955b5d770f8217a049beecce79e04a93787371c06dfb4b2414fec9d496bf3"},
 ]
